@@ -1,0 +1,5 @@
+.vim/.netrwhist
+.vim/plugged/
+.vim/black/
+.vim/bundle/
+*.old
