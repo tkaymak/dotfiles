@@ -1,9 +1,8 @@
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/tkaymak/.zsh/completions:"* ]]; then export FPATH="/Users/tkaymak/.zsh/completions:$FPATH"; fi
 ZSH_DISABLE_COMPFIX=true
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
 alias mbrew='arch -arm64e /opt/homebrew/bin/brew'
-export PATH="/opt/homebrew/bin:/opt/homebrew/opt:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 #export PATH="/usr/local/bin:$PATH"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -136,7 +135,6 @@ if [ -f '/Users/tkaymak/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tkaymak
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/tkaymak/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tkaymak/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="$HOME/.local/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/tkaymak/.antigravity/antigravity/bin:$PATH"
