@@ -149,3 +149,10 @@ compinit
 # Added by Antigravity CLI installer
 export PATH="/Users/tkaymak/.local/bin:$PATH"
 
+
+# attach to (or create) a tmux session named after the directory
+agent() {
+  local dir="${1:-$PWD}"
+  local name="$(basename "$dir" | tr . -)"
+  tmux new-session -A -s "$name" -c "$dir"
+}
